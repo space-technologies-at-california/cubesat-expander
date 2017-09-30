@@ -159,6 +159,40 @@
 <text x="-0.254" y="5.588" size="0.6096" layer="21" align="bottom-center">&gt;Name</text>
 <text x="-0.254" y="-5.588" size="0.4064" layer="21" align="top-center">&gt;Value</text>
 </package>
+<package name="WQFN28">
+<smd name="0" x="0" y="0" dx="2.6" dy="2.6" layer="1"/>
+<smd name="1" x="-2" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="2" x="-2" y="0.8" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="3" x="-2" y="0.4" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="4" x="-2" y="0" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="5" x="-2" y="-0.4" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="6" x="-2" y="-0.8" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="7" x="-2" y="-1.2" dx="0.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="8" x="-1.2" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="9" x="-0.8" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="10" x="-0.4" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="11" x="0" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="12" x="0.4" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="13" x="0.8" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="14" x="1.2" y="-2" dx="0.2" dy="0.8" layer="1"/>
+<smd name="15" x="2" y="-1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="16" x="2" y="-0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="17" x="2" y="-0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="18" x="2" y="0" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="19" x="2" y="0.4" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="20" x="2" y="0.8" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="21" x="2" y="1.2" dx="0.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="22" x="1.2" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="23" x="0.8" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="24" x="0.4" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="25" x="0" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="26" x="-0.4" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="27" x="-0.8" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="28" x="-1.2" y="2" dx="0.2" dy="0.8" layer="1" rot="R180"/>
+<text x="0" y="2.54" size="0.4064" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.4064" layer="21" align="top-center">&gt;VALUE</text>
+<circle x="-1.6" y="1.6" radius="0.1" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VENUS838FLPX-L">
@@ -224,6 +258,42 @@
 <wire x1="25.4" y1="-40.64" x2="-30.48" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="-30.48" y1="-40.64" x2="-30.48" y2="35.56" width="0.254" layer="94"/>
 <text x="0" y="0" size="2.1844" layer="94" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="BQ24773">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="ACN" x="-17.78" y="17.78" length="middle"/>
+<pin name="ACP" x="-17.78" y="15.24" length="middle"/>
+<pin name="CMSRC" x="-17.78" y="12.7" length="middle"/>
+<pin name="ACDRV" x="-17.78" y="10.16" length="middle"/>
+<pin name="ACOK" x="-17.78" y="5.08" length="middle"/>
+<pin name="ACDET" x="-17.78" y="2.54" length="middle"/>
+<pin name="IADP" x="-17.78" y="0" length="middle"/>
+<pin name="IBAT" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PMON" x="-17.78" y="-5.08" length="middle"/>
+<pin name="PROCHOT" x="-17.78" y="-7.62" length="middle"/>
+<pin name="SDA" x="-17.78" y="-10.16" length="middle"/>
+<pin name="SCL" x="-17.78" y="-12.7" length="middle"/>
+<pin name="CMPIN" x="-17.78" y="-15.24" length="middle"/>
+<pin name="CMPOUT" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="BATPRES" x="17.78" y="15.24" length="middle" rot="R180"/>
+<pin name="CELL" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="BATDRV" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="SRN" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SRP" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="ILIM" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GND@1" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="REGN" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="BTST" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="HIDRV" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="PHASE" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="VCC" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="LODRV" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="BAT" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="THERMAL" x="-17.78" y="-17.78" length="middle"/>
+<text x="0" y="0" size="1.27" layer="94" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -294,6 +364,50 @@ aerospace GPS chipset
 <connect gate="G$1" pin="VBAT" pad="18"/>
 <connect gate="G$1" pin="VCC33" pad="58"/>
 <connect gate="G$1" pin="VCC33I" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BQ24773">
+<description>&lt;p&gt;BQ24773 Li-ion and LiPo charging IC&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BQ24773" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WQFN28">
+<connects>
+<connect gate="G$1" pin="ACDET" pad="6"/>
+<connect gate="G$1" pin="ACDRV" pad="4"/>
+<connect gate="G$1" pin="ACN" pad="1"/>
+<connect gate="G$1" pin="ACOK" pad="5"/>
+<connect gate="G$1" pin="ACP" pad="2"/>
+<connect gate="G$1" pin="BAT" pad="17"/>
+<connect gate="G$1" pin="BATDRV" pad="18"/>
+<connect gate="G$1" pin="BATPRES" pad="15"/>
+<connect gate="G$1" pin="BTST" pad="25"/>
+<connect gate="G$1" pin="CELL" pad="16"/>
+<connect gate="G$1" pin="CMPIN" pad="13"/>
+<connect gate="G$1" pin="CMPOUT" pad="14"/>
+<connect gate="G$1" pin="CMSRC" pad="3"/>
+<connect gate="G$1" pin="GND@1" pad="22"/>
+<connect gate="G$1" pin="HIDRV" pad="26"/>
+<connect gate="G$1" pin="IADP" pad="7"/>
+<connect gate="G$1" pin="IBAT" pad="8"/>
+<connect gate="G$1" pin="ILIM" pad="21"/>
+<connect gate="G$1" pin="LODRV" pad="23"/>
+<connect gate="G$1" pin="PHASE" pad="27"/>
+<connect gate="G$1" pin="PMON" pad="9"/>
+<connect gate="G$1" pin="PROCHOT" pad="10"/>
+<connect gate="G$1" pin="REGN" pad="24"/>
+<connect gate="G$1" pin="SCL" pad="12"/>
+<connect gate="G$1" pin="SDA" pad="11"/>
+<connect gate="G$1" pin="SRN" pad="19"/>
+<connect gate="G$1" pin="SRP" pad="20"/>
+<connect gate="G$1" pin="THERMAL" pad="0"/>
+<connect gate="G$1" pin="VCC" pad="28"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7407,6 +7521,9 @@ Source: http://www.samtec.com/ftppub/cpdf/MMCX-J-P-X-ST-EM1-MKT.pdf</description
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="COAX" device=""/>
+<part name="BQ24773" library="calsat" deviceset="BQ24773" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7426,6 +7543,9 @@ Source: http://www.samtec.com/ftppub/cpdf/MMCX-J-P-X-ST-EM1-MKT.pdf</description
 <instance part="C1" gate="G$1" x="-167.64" y="91.44"/>
 <instance part="GND4" gate="1" x="-167.64" y="81.28"/>
 <instance part="X1" gate="COAX" x="-127" y="129.54"/>
+<instance part="BQ24773" gate="G$1" x="-134.62" y="-66.04"/>
+<instance part="GND5" gate="1" x="-88.9" y="-76.2"/>
+<instance part="GND6" gate="1" x="-154.94" y="-88.9"/>
 </instances>
 <busses>
 </busses>
@@ -7541,6 +7661,18 @@ Source: http://www.samtec.com/ftppub/cpdf/MMCX-J-P-X-ST-EM1-MKT.pdf</description
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-167.64" y1="83.82" x2="-167.64" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BQ24773" gate="G$1" pin="GND@1"/>
+<wire x1="-116.84" y1="-68.58" x2="-88.9" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="-68.58" x2="-88.9" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BQ24773" gate="G$1" pin="THERMAL"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-152.4" y1="-83.82" x2="-154.94" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-83.82" x2="-154.94" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STS" class="0">
@@ -7699,6 +7831,20 @@ Source: http://www.samtec.com/ftppub/cpdf/MMCX-J-P-X-ST-EM1-MKT.pdf</description
 <junction x="-149.86" y="104.14"/>
 <wire x1="-167.64" y1="101.6" x2="-149.86" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-149.86" y="101.6"/>
+</segment>
+</net>
+<net name="I2C_DATA" class="0">
+<segment>
+<pinref part="BQ24773" gate="G$1" pin="SDA"/>
+<wire x1="-152.4" y1="-76.2" x2="-170.18" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-170.18" y="-76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C_CLK" class="0">
+<segment>
+<pinref part="BQ24773" gate="G$1" pin="SCL"/>
+<wire x1="-152.4" y1="-78.74" x2="-170.18" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-170.18" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

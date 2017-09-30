@@ -352,7 +352,7 @@ UsedLibrary="/home/mark/stac/eagle/libr/vectornav.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="447 692 1646 1291"
+Loc="495 684 1694 1283"
 State=2
 Number=0
 

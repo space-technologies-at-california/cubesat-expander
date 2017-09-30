@@ -1,5 +1,7 @@
 TARBALL = scard.tgz
-TARBALL_FILES = scard libr Makefile .gitignore .git
+PARENT_DIR = $(shell basename $(PWD))
+TARBALL_DEPS = .git .gitignore Makefile libr scard
+TARBALL_FILES = $(patsubst %,../$(PARENT_DIR)/%,$(TARBALL_DEPS))
 
 WEB_TARGET = $(WEBDIR)/$(TARBALL)
 WEBDIR = $(HOME)/html/stac/eagle/
@@ -10,7 +12,7 @@ TAR_CREATE = tar czf
 
 .PHONY: webmirror clean
 
-$(TARBALL): $(TARBALL_FILES)
+$(TARBALL): $(TARBALL_DEPS)
 	$(TAR_CREATE) $(TARBALL) $(TARBALL_FILES)
 
 $(WEB_TARGET): $(TARBALL)
