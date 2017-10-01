@@ -10119,6 +10119,8 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="-68.58" y="-66.04" size="1.778" layer="94">battery conn goes here</text>
+<text x="-154.94" y="-5.08" size="1.778" layer="94">solar cell conn here</text>
 </plain>
 <instances>
 <instance part="GPS_CHIPSET" gate="G$1" x="-106.68" y="73.66"/>
@@ -10143,11 +10145,11 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <instance part="GND7" gate="1" x="-124.46" y="-15.24"/>
 <instance part="GND8" gate="1" x="-71.12" y="-17.78" rot="R180"/>
 <instance part="GND9" gate="1" x="-88.9" y="-66.04"/>
-<instance part="R5" gate="G$1" x="-76.2" y="-53.34" rot="R90"/>
-<instance part="R6" gate="G$1" x="-81.28" y="-60.96" rot="R180"/>
+<instance part="R5" gate="G$1" x="-78.74" y="-53.34" rot="R90"/>
+<instance part="R6" gate="G$1" x="-83.82" y="-60.96" rot="R180"/>
 <instance part="C4" gate="G$1" x="-55.88" y="-27.94"/>
-<instance part="IC1" gate="G$1" x="27.94" y="-20.32"/>
-<instance part="IC2" gate="G$1" x="27.94" y="-66.04"/>
+<instance part="IC1" gate="G$1" x="45.72" y="-20.32"/>
+<instance part="IC2" gate="G$1" x="45.72" y="-91.44"/>
 <instance part="U$1" gate="G$1" x="-111.76" y="0"/>
 <instance part="U$3" gate="G$1" x="-43.18" y="-33.02" rot="R90"/>
 <instance part="U$4" gate="G$1" x="-27.94" y="-33.02" rot="R90"/>
@@ -10297,7 +10299,6 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <wire x1="-88.9" y1="-60.96" x2="-88.9" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="-50.8" x2="-88.9" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-86.36" y1="-60.96" x2="-88.9" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="-88.9" y="-60.96"/>
 </segment>
 <segment>
@@ -10512,23 +10513,24 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <label x="-38.1" y="0" size="1.778" layer="95"/>
 <wire x1="-27.94" y1="0" x2="-38.1" y2="0" width="0.1524" layer="91"/>
 <junction x="-27.94" y="0"/>
-<pinref part="IC1" gate="G$1" pin="VIN@1"/>
 <wire x1="-27.94" y1="0" x2="-15.24" y2="0" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="0" x2="12.7" y2="0" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="0" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VIN@2"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="12.7" y="-5.08"/>
-<wire x1="-15.24" y1="0" x2="-15.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="0" x2="-15.24" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="-15.24" y="0"/>
-<pinref part="IC2" gate="G$1" pin="VIN@1"/>
-<wire x1="-15.24" y1="-50.8" x2="12.7" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VIN@2"/>
-<wire x1="12.7" y1="-50.8" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="12.7" y="-50.8"/>
 <pinref part="U$1" gate="G$1" pin="@3"/>
 <pinref part="U$4" gate="G$1" pin="@3"/>
 <wire x1="-27.94" y1="-27.94" x2="-27.94" y2="0" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VIN@2"/>
+<pinref part="IC1" gate="G$1" pin="VIN@1"/>
+<wire x1="30.48" y1="-5.08" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="-5.08" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="30.48" y="-5.08"/>
+<pinref part="IC2" gate="G$1" pin="VIN@2"/>
+<pinref part="IC2" gate="G$1" pin="VIN@1"/>
+<wire x1="30.48" y1="-76.2" x2="30.48" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-76.2" x2="30.48" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="30.48" y="-76.2"/>
 </segment>
 </net>
 <net name="VBATT" class="0">
@@ -10557,6 +10559,14 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 <junction x="-68.58" y="-58.42"/>
 <wire x1="-43.18" y1="-58.42" x2="-68.58" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-58.42" x2="-73.66" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="CHRG_IC" gate="G$1" pin="BAT"/>
+<wire x1="-91.44" y1="-40.64" x2="-91.44" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-48.26" x2="-78.74" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-58.42" x2="-73.66" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-48.26" x2="-78.74" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-48.26"/>
 </segment>
 </net>
 <net name="V_SOLAR_UNREG" class="0">
@@ -10570,11 +10580,11 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-76.2" y1="-58.42" x2="-76.2" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-60.96" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-60.96"/>
+<wire x1="-78.74" y1="-58.42" x2="-78.74" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-60.96" x2="-78.74" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-60.96"/>
 <pinref part="CHRG_IC" gate="G$1" pin="V_FB"/>
-<wire x1="-76.2" y1="-71.12" x2="-127" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-71.12" x2="-127" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-71.12" x2="-127" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-127" y="-60.96" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -10601,26 +10611,19 @@ Spurce: www.linear.com .. 3434fb.pdf</description>
 <junction x="-55.88" y="-33.02"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="CHRG_IC" gate="G$1" pin="BAT"/>
-<wire x1="-91.44" y1="-40.64" x2="-91.44" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-48.26"/>
-<wire x1="-76.2" y1="-48.26" x2="-68.58" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="L2" gate="L" pin="2"/>
-<wire x1="-68.58" y1="-48.26" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="-68.58" y="-48.26"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="CHRG_IC" gate="G$1" pin="SENSE"/>
 <wire x1="-91.44" y1="-27.94" x2="-68.58" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="L2" gate="L" pin="1"/>
 <wire x1="-68.58" y1="-35.56" x2="-68.58" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="L2" gate="L" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-68.58" y1="-48.26" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

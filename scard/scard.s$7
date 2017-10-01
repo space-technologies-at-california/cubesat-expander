@@ -7864,6 +7864,27 @@ Source: http://datasheets.maxim-ic.com/en/ds/MAX7313.pdf</description>
 <label x="-38.1" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="DEP0" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P6"/>
+<wire x1="10.16" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+<label x="17.78" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DEP1" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P7"/>
+<wire x1="10.16" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+<label x="17.78" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DEP2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="P8"/>
+<wire x1="10.16" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="17.78" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
