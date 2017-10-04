@@ -2,3 +2,5 @@
 eagle
 .eaglerc
 scard.tgz
+scard.b\$*
+scard.s\$*

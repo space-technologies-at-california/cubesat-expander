@@ -348,9 +348,9 @@ UsedLibraryUrn="urn:adsk.eagle:library:174"
 UsedLibraryUrn="urn:adsk.eagle:library:175"
 UsedLibraryUrn="urn:adsk.eagle:library:176"
 UsedLibraryUrn="urn:adsk.eagle:library:177"
+UsedLibrary="/home/mark/stac/eagle/libr/adc.lbr"
 UsedLibrary="/home/mark/stac/eagle/libr/calsat.lbr"
 UsedLibrary="/home/mark/stac/eagle/libr/vectornav.lbr"
-UsedLibrary="/home/mark/stac/eagle/libr/adc.lbr"
 
 [Win_1]
 Type="Control Panel"
