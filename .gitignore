@@ -4,3 +4,5 @@ eagle
 scard.tgz
 scard.b\$*
 scard.s\$*
+scard.s#*
+scard.b#*
