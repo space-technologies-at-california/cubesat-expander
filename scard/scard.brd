@@ -3540,6 +3540,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.6041" y1="82.61" x2="33.3501" y2="82.61" width="0.4064" layer="1"/>
 <wire x1="38.0125" y1="82.61" x2="38.0959" y2="82.61" width="0.4064" layer="1"/>
 <wire x1="33.6875" y1="82.61" x2="33.6041" y2="82.61" width="0.4064" layer="1"/>
+<wire x1="32.49" y1="74.93" x2="33.29" y2="74.93" width="0.1524" layer="1"/>
+<wire x1="31.69" y1="74.93" x2="32.49" y2="74.93" width="0.1524" layer="1"/>
+<wire x1="37.69625" y1="74.6848" x2="37.8748" y2="74.50625" width="0.3048" layer="1"/>
+<wire x1="37.8748" y1="72.6252" x2="38.5" y2="72" width="0.3048" layer="1"/>
+<wire x1="37.8748" y1="74.50625" x2="37.8748" y2="72.6252" width="0.3048" layer="1"/>
+<wire x1="36.49" y1="74.93" x2="36.7352" y2="74.6848" width="0.3048" layer="1"/>
+<wire x1="36.7352" y1="74.6848" x2="37.69625" y2="74.6848" width="0.3048" layer="1"/>
+<via x="38.5" y="72" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="STS">
 <contactref element="GPS_CHIPSET" pad="7"/>
@@ -4589,6 +4597,14 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="34" y="75"/>
 </polygon>
 </signal>
+<signal name="NONE2">
+<polygon width="0.1524" layer="1" pour="cutout">
+<vertex x="27.5" y="75"/>
+<vertex x="37" y="75"/>
+<vertex x="37" y="65.5"/>
+<vertex x="27.5" y="65.5"/>
+</polygon>
+</signal>
 </signals>
 <errors>
 <approved hash="21,19,5bed5bed59ef27ef"/>
@@ -4634,6 +4650,30 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="4,1,eda6910959937336"/>
 <approved hash="4,1,6d68375686ce2d75"/>
 <approved hash="4,1,38d8186f185f3690"/>
+<approved hash="5,1,70903bf1174d9686"/>
+<approved hash="5,1,63e06c8afa2910ff"/>
+<approved hash="5,1,9765c634913ded03"/>
+<approved hash="5,1,ac64a97e44316b0b"/>
+<approved hash="4,1,8939ae283ca44d37"/>
+<approved hash="4,1,7c8a38a8e79fbd83"/>
+<approved hash="4,1,db0d1e0e3d220eab"/>
+<approved hash="4,1,100746395c4d544e"/>
+<approved hash="4,1,79d6ea27781e172d"/>
+<approved hash="4,1,6a4e3bb68ed3953a"/>
+<approved hash="4,1,00a309386e2458f3"/>
+<approved hash="4,1,9ca782f1b530f7ff"/>
+<approved hash="4,1,913a878eab0be0d1"/>
+<approved hash="4,1,761a6bad2ae4f757"/>
+<approved hash="4,1,75ca521b54487be1"/>
+<approved hash="4,1,1bfd0efb6d99ba81"/>
+<approved hash="4,1,21326eaa70d51aee"/>
+<approved hash="4,1,9613644968f6a5e0"/>
+<approved hash="4,1,0ce6d04770d621cf"/>
+<approved hash="4,1,183943ee3a446388"/>
+<approved hash="4,1,5e13f9044d1f96d8"/>
+<approved hash="4,1,3a4edb10bd3eaa55"/>
+<approved hash="4,1,41919a36f2f1d1cf"/>
+<approved hash="4,1,e8ca539d53b5e09a"/>
 </errors>
 </board>
 </drawing>
