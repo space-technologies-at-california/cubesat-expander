@@ -271,15 +271,6 @@
 <smd name="12" x="-1.63" y="2.05" dx="0.42" dy="0.889" layer="1" rot="R180"/>
 <circle x="-1.65" y="-1.2" radius="0.064028125" width="0.127" layer="51"/>
 </package>
-<package name="TO-252">
-<smd name="1" x="0" y="0" dx="6" dy="6" layer="1"/>
-<smd name="2" x="-2.2" y="-6.5" dx="1.6" dy="3" layer="1"/>
-<smd name="3" x="2.2" y="-6.5" dx="1.6" dy="3" layer="1"/>
-<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="39"/>
-<wire x1="3.5" y1="3.5" x2="3.5" y2="-8.5" width="0.127" layer="39"/>
-<wire x1="3.5" y1="-8.5" x2="-3.5" y2="-8.5" width="0.127" layer="39"/>
-<wire x1="-3.5" y1="-8.5" x2="-3.5" y2="3.5" width="0.127" layer="39"/>
-</package>
 <package name="SRP7028A">
 <smd name="1" x="-2.7" y="0" dx="2.95" dy="3.5" layer="1" rot="R180"/>
 <smd name="2" x="2.7" y="0" dx="3" dy="3.5" layer="1" rot="R180"/>
@@ -454,16 +445,6 @@
 <pin name="GND" x="0" y="-17.78" length="middle" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="94" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="B085BM30">
-<pin name="@1" x="-5.08" y="2.54" length="short"/>
-<pin name="@2" x="-5.08" y="-2.54" length="short"/>
-<pin name="@3" x="5.08" y="0" length="short" rot="R180"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.27" layer="94">&gt;NAME</text>
-</symbol>
 <symbol name="XFL4020">
 <pin name="@1" x="0" y="7.62" length="short" direction="pas" rot="R270"/>
 <pin name="@2" x="0" y="-7.62" length="short" direction="pas" rot="R90"/>
@@ -628,24 +609,6 @@ aerospace GPS chipset
 <connect gate="G$1" pin="V_FB" pad="7"/>
 <connect gate="G$1" pin="V_IN" pad="1"/>
 <connect gate="G$1" pin="V_IN_REG" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="B085BM30" prefix="D">
-<description>B085BM30 3A diode</description>
-<gates>
-<gate name="G$1" symbol="B085BM30" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO-252">
-<connects>
-<connect gate="G$1" pin="@1" pad="3"/>
-<connect gate="G$1" pin="@2" pad="2"/>
-<connect gate="G$1" pin="@3" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14624,99 +14587,6 @@ Source: http://www.samtec.com/ftppub/cpdf/MMCX-J-P-X-ST-EM1-MKT.pdf</description
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-power" urn="urn:adsk.eagle:library:400">
-<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SUPER-SOT3" urn="urn:adsk.eagle:footprint:29425/1" library_version="2">
-<description>&lt;b&gt;MOLDED PACKAGE SUPERSOT, 3 LEAD&lt;/b&gt; MKT-MAO3B&lt;p&gt;
-Source: http://www.fairchildsemi.com/dwg/MA/MA03B.pdf</description>
-<wire x1="1.352" y1="0.603" x2="1.352" y2="-0.603" width="0.2032" layer="21"/>
-<wire x1="1.352" y1="-0.603" x2="-1.352" y2="-0.603" width="0.2032" layer="21"/>
-<wire x1="-1.352" y1="-0.603" x2="-1.352" y2="0.603" width="0.2032" layer="21"/>
-<wire x1="-1.352" y1="0.603" x2="1.352" y2="0.603" width="0.2032" layer="21"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.75" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.75" y="-3.25" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.175" y1="-1.25" x2="-0.675" y2="-0.6534" layer="51"/>
-<rectangle x1="0.675" y1="-1.25" x2="1.175" y2="-0.6534" layer="51"/>
-<rectangle x1="-0.25" y1="0.6534" x2="0.225" y2="1.25" layer="51" rot="R180"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SUPER-SOT3" urn="urn:adsk.eagle:package:29529/2" type="model" library_version="2">
-<description>MOLDED PACKAGE SUPERSOT, 3 LEAD MKT-MAO3B
-Source: http://www.fairchildsemi.com/dwg/MA/MA03B.pdf</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MOSFET_P" urn="urn:adsk.eagle:symbol:29421/1" library_version="2">
-<wire x1="-1.016" y1="-2.54" x2="-1.016" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="0.508" y1="-2.159" x2="2.54" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.159" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="2.159" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.159" x2="0.5334" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.81" y2="2.159" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.159" x2="3.81" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.159" x2="2.54" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.159" width="0.1524" layer="94"/>
-<circle x="2.54" y="2.159" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="-2.159" radius="0.127" width="0.4064" layer="94"/>
-<text x="6.35" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.397" y="-4.318" size="0.8128" layer="93">D</text>
-<text x="1.397" y="3.556" size="0.8128" layer="93">S</text>
-<text x="-2.286" y="1.143" size="0.8128" layer="93">G</text>
-<rectangle x1="-0.254" y1="-2.794" x2="0.508" y2="-1.27" layer="94"/>
-<rectangle x1="-0.254" y1="1.27" x2="0.508" y2="2.794" layer="94"/>
-<rectangle x1="-0.254" y1="-0.889" x2="0.508" y2="0.889" layer="94"/>
-<pin name="G" x="-2.54" y="2.54" visible="off" length="point" direction="pas"/>
-<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<polygon width="0.1524" layer="94">
-<vertex x="2.54" y="0"/>
-<vertex x="1.27" y="0.508"/>
-<vertex x="1.27" y="-0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="3.81" y="0.508"/>
-<vertex x="3.302" y="-0.254"/>
-<vertex x="4.318" y="-0.254"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FDN360P" urn="urn:adsk.eagle:component:29602/2" prefix="Q" library_version="2">
-<description>&lt;b&gt;Single P-Channel, PowerTrench (R) MOSFET&lt;/b&gt;&lt;p&gt;
-Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
-<gates>
-<gate name="G$1" symbol="MOSFET_P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SUPER-SOT3">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:29529/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-leotronics" urn="urn:adsk.eagle:library:160">
 <description>&lt;b&gt;Connectors from Leotronics&lt;/b&gt;&lt;p&gt;
 www.leotronics.co.uk&lt;br&gt;</description>
@@ -14932,10 +14802,35 @@ Based on the following sources:
 <rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
 <rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
 </package>
+<package name="SMA" urn="urn:adsk.eagle:footprint:43244/1" library_version="2">
+<description>&lt;b&gt;SMA&lt;/b&gt; CASE 403D-02&lt;p&gt;
+Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
+<wire x1="-2.25" y1="1.825" x2="2.25" y2="1.825" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-1.825" x2="-2.25" y2="-1.825" width="0.254" layer="21"/>
+<wire x1="-2.25" y1="1.825" x2="-2.25" y2="1.25" width="0.254" layer="21"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.254" layer="51"/>
+<wire x1="-2.25" y1="-1.825" x2="-2.25" y2="-1.25" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-1.825" x2="2.25" y2="-1.25" width="0.254" layer="21" curve="-1.904406"/>
+<wire x1="2.25" y1="1.825" x2="2.25" y2="1.25" width="0.254" layer="21"/>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.254" layer="51"/>
+<smd name="C" x="-2" y="0" dx="2" dy="2" layer="1"/>
+<smd name="A" x="2" y="0" dx="2" dy="2" layer="1"/>
+<text x="-2.75" y="2" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.75" y="-3.5" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="2.38" y1="-0.825" x2="2.8" y2="0.8" layer="51"/>
+<rectangle x1="-2.8" y1="-0.8" x2="-2.38" y2="0.8" layer="51"/>
+<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="1.75" layer="51"/>
+<rectangle x1="-1.5" y1="1.25" x2="-0.75" y2="1.75" layer="21"/>
+<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="-1.25" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMB" urn="urn:adsk.eagle:package:43404/2" type="model" library_version="2">
 <description>DIODE</description>
+</package3d>
+<package3d name="SMA" urn="urn:adsk.eagle:package:43460/3" type="model" library_version="2">
+<description>SMA CASE 403D-02
+Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
 </package3d>
 </packages3d>
 <symbols>
@@ -14949,6 +14844,16 @@ Based on the following sources:
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
 <text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DIODE" urn="urn:adsk.eagle:symbol:43243/1" library_version="2">
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.397" y1="1.905" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.3114" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.5654" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
@@ -14968,6 +14873,27 @@ super fast rectifier, 2 A</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:43404/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBRA340T3" urn="urn:adsk.eagle:component:43663/3" prefix="D" library_version="2">
+<description>&lt;b&gt;Surface Mount Schottky Power Rectifier&lt;/b&gt;&lt;p&gt;
+Source: http://www.onsemi.com/pub_link/Collateral/MBRA340T3-D.PDF</description>
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43460/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -15026,6 +14952,130 @@ super fast rectifier, 2 A</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-fet" urn="urn:adsk.eagle:library:396">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="TO252" urn="urn:adsk.eagle:footprint:28481/1" library_version="2">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+TS-003</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-3.973" y1="5.983" x2="3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-5.983" x2="-3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-5.983" x2="-3.973" y2="5.983" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="5.983" x2="3.973" y2="-5.983" width="0.0508" layer="39"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="3" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO252" urn="urn:adsk.eagle:package:28537/2" type="model" library_version="2">
+<description>SMALL OUTLINE TRANSISTOR
+TS-003</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="P-MOSFET" urn="urn:adsk.eagle:symbol:28480/1" library_version="2">
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FDD4141" urn="urn:adsk.eagle:component:28628/2" prefix="Q" library_version="2">
+<description>&lt;b&gt;P-Channel PowerTrench® MOSFET&lt;/b&gt;&lt;p&gt;
+Source:  FDD4141.pdf</description>
+<gates>
+<gate name="G$1" symbol="P-MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO252" package="TO252">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28537/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15042,36 +15092,33 @@ super fast rectifier, 2 A</description>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="FDN360P" device="" package3d_urn="urn:adsk.eagle:package:29529/2"/>
+<part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="FDD4141" device="TO252" package3d_urn="urn:adsk.eagle:package:28537/2"/>
 <part name="+3V35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1K"/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="10K"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="COAX" device=""/>
 <part name="T1" library="calsat" deviceset="LT3652" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/1"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/1"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="412k"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="20uF"/>
+<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="22uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/1" value="~630k"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/1" value="~410k"/>
-<part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="1uF"/>
-<part name="D1" library="calsat" deviceset="B085BM30" device=""/>
-<part name="D4" library="calsat" deviceset="B085BM30" device=""/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="634k"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="412k"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="1uF"/>
 <part name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="10uF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:26058/1" value="0.11"/>
-<part name="D2" library="calsat" deviceset="B085BM30" device=""/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.11"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="calsat" deviceset="SRP7028A" device="" value="10uH"/>
-<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:26063/1" value="0.01"/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R1210" package3d_urn="urn:adsk.eagle:package:26063/1" value="0.01"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.01"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.01"/>
 <part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
@@ -15095,15 +15142,15 @@ super fast rectifier, 2 A</description>
 <part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD5" device="" package3d_urn="urn:adsk.eagle:package:30841/1"/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ES2D" device="" package3d_urn="urn:adsk.eagle:package:43404/2"/>
 <part name="P1" library="calsat" deviceset="TPS548A20" device=""/>
-<part name="C17" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
-<part name="C18" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
-<part name="C21" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
+<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="C23" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="C25" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="C26" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
-<part name="C19" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
-<part name="C20" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
-<part name="C22" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
+<part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
+<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="C24" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
@@ -15113,23 +15160,28 @@ super fast rectifier, 2 A</description>
 <part name="C15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:26136/1" value="1uF"/>
 <part name="C14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:26136/1" value="1uF"/>
 <part name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:26136/1" value="0.1uF"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="105k"/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="249k"/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="150k"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="100k"/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="64.9k"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="2k"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="9k"/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="3"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="100k"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="249k"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="150k"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="412k"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="64.9k"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="2k"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="9k"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="3"/>
 <part name="L3" library="calsat" deviceset="SRP7028A" device="" value="1.5uH"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="0"/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="200k"/>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/1" value="200k"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="200k"/>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="200k"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L4" library="Seeed-Inductor" library_urn="urn:adsk.eagle:library:471" deviceset="SMD-FERRITE-BEAD-330R-1500MA(0805)" device="'0805'" value="33nH"/>
+<part name="C27" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:26136/1" value="1uF"/>
+<part name="C28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:26136/1" value="470pF"/>
+<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="MBRA340T3" device="" package3d_urn="urn:adsk.eagle:package:43460/3"/>
+<part name="D6" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="MBRA340T3" device="" package3d_urn="urn:adsk.eagle:package:43460/3"/>
+<part name="D7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="MBRA340T3" device="" package3d_urn="urn:adsk.eagle:package:43460/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -15163,13 +15215,10 @@ super fast rectifier, 2 A</description>
 <instance part="R6" gate="G$1" x="-78.74" y="-53.34" rot="R90"/>
 <instance part="R5" gate="G$1" x="-83.82" y="-60.96" rot="R180"/>
 <instance part="C5" gate="G$1" x="-55.88" y="-27.94"/>
-<instance part="D1" gate="G$1" x="-111.76" y="0"/>
-<instance part="D4" gate="G$1" x="-27.94" y="-33.02" rot="R90"/>
 <instance part="C6" gate="G$1" x="-35.56" y="-43.18"/>
 <instance part="GND13" gate="1" x="-35.56" y="-50.8"/>
 <instance part="GND11" gate="1" x="-68.58" y="-81.28"/>
 <instance part="R7" gate="G$1" x="-68.58" y="-53.34" rot="R90"/>
-<instance part="D2" gate="G$1" x="-55.88" y="-40.64" rot="R90"/>
 <instance part="GND12" gate="1" x="-55.88" y="-50.8"/>
 <instance part="L2" gate="G$1" x="-66.04" y="-40.64"/>
 <instance part="R9" gate="G$1" x="-48.26" y="0" rot="R180"/>
@@ -15251,6 +15300,11 @@ super fast rectifier, 2 A</description>
 <instance part="GND19" gate="1" x="132.08" y="-30.48"/>
 <instance part="GND20" gate="1" x="76.2" y="-7.62"/>
 <instance part="L4" gate="L" x="-119.38" y="137.16" rot="R270"/>
+<instance part="C27" gate="G$1" x="-134.62" y="119.38"/>
+<instance part="C28" gate="G$1" x="-127" y="119.38"/>
+<instance part="D5" gate="G$1" x="-111.76" y="0"/>
+<instance part="D6" gate="G$1" x="-27.94" y="-33.02" rot="R90"/>
+<instance part="D7" gate="G$1" x="-55.88" y="-40.64" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15403,12 +15457,8 @@ super fast rectifier, 2 A</description>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="D2" gate="G$1" pin="@1"/>
-<pinref part="D2" gate="G$1" pin="@2"/>
-<wire x1="-55.88" y1="-48.26" x2="-55.88" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-45.72" x2="-53.34" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="-45.72" x2="-55.88" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="-55.88" y="-45.72"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+<wire x1="-55.88" y1="-43.18" x2="-55.88" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -15420,6 +15470,12 @@ super fast rectifier, 2 A</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-142.24" y1="111.76" x2="-142.24" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="-127" y1="114.3" x2="-134.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="114.3" x2="-142.24" y2="114.3" width="0.1524" layer="91"/>
+<junction x="-134.62" y="114.3"/>
+<junction x="-142.24" y="114.3"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-20" pin="S"/>
@@ -15626,21 +15682,25 @@ super fast rectifier, 2 A</description>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
 <pinref part="G1" gate="G$1" pin="VBAT"/>
 <wire x1="-142.24" y1="99.06" x2="-147.32" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-147.32" y1="99.06" x2="-147.32" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-147.32" y1="109.22" x2="-147.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="99.06" x2="-147.32" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="106.68" x2="-147.32" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="121.92" x2="-147.32" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="88.9" x2="-154.94" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="-154.94" y1="99.06" x2="-147.32" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-147.32" y="99.06"/>
-<wire x1="-147.32" y1="109.22" x2="-162.56" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="109.22" x2="-162.56" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-147.32" y="109.22"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="-162.56" y1="106.68" x2="-160.02" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-142.24" y1="121.92" x2="-147.32" y2="121.92" width="0.1524" layer="91"/>
 <junction x="-147.32" y="121.92"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-149.86" y1="106.68" x2="-147.32" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-147.32" y="106.68"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="-127" y1="121.92" x2="-134.62" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="121.92" x2="-142.24" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-134.62" y="121.92"/>
+<junction x="-142.24" y="121.92"/>
 </segment>
 <segment>
 <pinref part="V1" gate="G$1" pin="VIN"/>
@@ -15910,7 +15970,8 @@ super fast rectifier, 2 A</description>
 <label x="-132.08" y="-17.78" size="1.778" layer="95"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <pinref part="T1" gate="G$1" pin="SHDN"/>
-<wire x1="-132.08" y1="-5.08" x2="-132.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-5.08" x2="-132.08" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-2.54" x2="-132.08" y2="0" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="0" x2="-132.08" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-30.48" x2="-132.08" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-132.08" y1="-30.48" x2="-132.08" y2="-22.86" width="0.1524" layer="91"/>
@@ -15918,13 +15979,14 @@ super fast rectifier, 2 A</description>
 <junction x="-132.08" y="-5.08"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-132.08" y1="-5.08" x2="-124.46" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="0" x2="-116.84" y2="0" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="0" x2="-114.3" y2="0" width="0.1524" layer="91"/>
 <junction x="-132.08" y="0"/>
-<wire x1="-116.84" y1="0" x2="-116.84" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="0" x2="-116.84" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="-116.84" y="0"/>
-<pinref part="D1" gate="G$1" pin="@1"/>
-<pinref part="D1" gate="G$1" pin="@2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-139.7" y1="-15.24" x2="-139.7" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-139.7" y="-12.7" size="1.778" layer="95" rot="R90"/>
+<wire x1="-139.7" y1="-2.54" x2="-132.08" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-132.08" y="-2.54"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="PAD1" gate="1" pin="P"/>
@@ -15944,12 +16006,12 @@ super fast rectifier, 2 A</description>
 <junction x="-27.94" y="0"/>
 <wire x1="-27.94" y1="0" x2="-15.24" y2="0" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="0" x2="-15.24" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="@3"/>
-<wire x1="-27.94" y1="-27.94" x2="-27.94" y2="0" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-30.48" x2="-27.94" y2="0" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="0" x2="-43.18" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-43.18" y="0"/>
 <label x="-43.18" y="-7.62" size="1.778" layer="95"/>
+<pinref part="D6" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="IN-2"/>
@@ -16029,13 +16091,6 @@ super fast rectifier, 2 A</description>
 <label x="106.68" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V_SOLAR_UNREG" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-139.7" y1="-15.24" x2="-139.7" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-139.7" y="-12.7" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="3V3@CHARGED" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -16067,11 +16122,11 @@ super fast rectifier, 2 A</description>
 <pinref part="L2" gate="G$1" pin="@1"/>
 <wire x1="-91.44" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="D2" gate="G$1" pin="@3"/>
-<wire x1="-55.88" y1="-35.56" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="-66.04" y="-33.02"/>
 <junction x="-55.88" y="-33.02"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="-55.88" y1="-38.1" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -16135,16 +16190,10 @@ super fast rectifier, 2 A</description>
 <net name="VBATT_CUR" class="0">
 <segment>
 <label x="-66.04" y="-60.96" size="1.778" layer="95"/>
-<pinref part="D4" gate="G$1" pin="@1"/>
-<wire x1="-30.48" y1="-38.1" x2="-27.94" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="-40.64" x2="-35.56" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <junction x="-35.56" y="-40.64"/>
 <wire x1="-35.56" y1="-40.64" x2="-27.94" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="-40.64" x2="-27.94" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-27.94" y="-38.1"/>
-<wire x1="-27.94" y1="-38.1" x2="-25.4" y2="-38.1" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="@2"/>
 <wire x1="-43.18" y1="-40.64" x2="-43.18" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-43.18" y="-40.64"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -16164,6 +16213,8 @@ super fast rectifier, 2 A</description>
 <junction x="-68.58" y="-60.96"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-43.18" y1="-35.56" x2="-43.18" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="A"/>
+<wire x1="-27.94" y1="-35.56" x2="-27.94" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="IN+3"/>
@@ -16173,38 +16224,18 @@ super fast rectifier, 2 A</description>
 </net>
 <net name="SYS_UNREG_CUR" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="@3"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-106.68" y1="0" x2="-60.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="0" x2="-60.96" y2="0" width="0.1524" layer="91"/>
 <label x="-60.96" y="-7.62" size="1.778" layer="95"/>
 <wire x1="-60.96" y1="0" x2="-53.34" y2="0" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="0" x2="-60.96" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-60.96" y="0"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="A1" gate="G$1" pin="IN+2"/>
 <wire x1="-83.82" y1="-119.38" x2="-78.74" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-83.82" y="-119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<pinref part="G1" gate="G$1" pin="VCC33I"/>
-<wire x1="-149.86" y1="106.68" x2="-142.24" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="106.68" x2="-142.24" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-167.64" y1="93.98" x2="-167.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-167.64" y1="96.52" x2="-165.1" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="-167.64" y1="96.52" x2="-167.64" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-167.64" y="96.52"/>
-<pinref part="G1" gate="G$1" pin="VCC33"/>
-<wire x1="-167.64" y1="101.6" x2="-149.86" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="106.68" x2="-149.86" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-149.86" y="106.68"/>
-<junction x="-149.86" y="101.6"/>
 </segment>
 </net>
 <net name="SOLAR1_CUR" class="0">
@@ -16381,6 +16412,26 @@ super fast rectifier, 2 A</description>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-22.86" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-160.02" y1="106.68" x2="-160.02" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="G1" gate="G$1" pin="VCC33I"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-152.4" y1="104.14" x2="-142.24" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="93.98" x2="-167.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="96.52" x2="-165.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="96.52" x2="-167.64" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-167.64" y="96.52"/>
+<pinref part="G1" gate="G$1" pin="VCC33"/>
+<wire x1="-167.64" y1="101.6" x2="-160.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="104.14" x2="-160.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="104.14" x2="-160.02" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-160.02" y="101.6"/>
 </segment>
 </net>
 </nets>
