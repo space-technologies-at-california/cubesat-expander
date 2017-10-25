@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -270,6 +270,20 @@
 <smd name="11" x="-0.98" y="2.05" dx="0.42" dy="0.889" layer="1" rot="R180"/>
 <smd name="12" x="-1.63" y="2.05" dx="0.42" dy="0.889" layer="1" rot="R180"/>
 <circle x="-1.65" y="-1.2" radius="0.064028125" width="0.127" layer="51"/>
+</package>
+<package name="SRP7030">
+<smd name="P$1" x="-2.85" y="0" dx="2" dy="3.5" layer="1"/>
+<smd name="P$2" x="2.85" y="0" dx="2" dy="3.5" layer="1"/>
+<wire x1="-4.1" y1="3.7" x2="4.1" y2="3.7" width="0.127" layer="39"/>
+<wire x1="4.1" y1="3.7" x2="4.1" y2="-3.7" width="0.127" layer="39"/>
+<wire x1="4.1" y1="-3.7" x2="-4.1" y2="-3.7" width="0.127" layer="39"/>
+<wire x1="-4.1" y1="-3.7" x2="-4.1" y2="3.7" width="0.127" layer="39"/>
+<wire x1="-4.05" y1="3.65" x2="4.05" y2="3.65" width="0.127" layer="51"/>
+<wire x1="4.05" y1="3.65" x2="4.05" y2="-3.65" width="0.127" layer="51"/>
+<wire x1="4.05" y1="-3.65" x2="-4.05" y2="-3.65" width="0.127" layer="51"/>
+<wire x1="-4.05" y1="-3.65" x2="-4.05" y2="3.65" width="0.127" layer="51"/>
+<text x="0" y="2.2" size="0.6096" layer="51" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2" size="0.6096" layer="51" align="top-center">&gt;VALUE</text>
 </package>
 <package name="SRP7028A">
 <smd name="1" x="-2.7" y="0" dx="2.95" dy="3.5" layer="1" rot="R180"/>
@@ -609,6 +623,24 @@ aerospace GPS chipset
 <connect gate="G$1" pin="V_FB" pad="7"/>
 <connect gate="G$1" pin="V_IN" pad="1"/>
 <connect gate="G$1" pin="V_IN_REG" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRP7030-100M" uservalue="yes">
+<description>&lt;p&gt;SRP7030-100M 3A 10uH power inductor&lt;/p&gt;
+&lt;p&gt;source: &lt;a href=http://www.mouser.com/ds/2/54/SRP7030-33303.pdf&gt;http://www.mouser.com/ds/2/54/SRP7030-33303.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="XFL4020" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRP7030">
+<connects>
+<connect gate="G$1" pin="@1" pad="P$1"/>
+<connect gate="G$1" pin="@2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15085,7 +15117,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.11"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L2" library="calsat" deviceset="SRP7028A" device="" value="10uH"/>
+<part name="L2" library="calsat" deviceset="SRP7030-100M" device="" value="10uH"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.01"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="0.01"/>
 <part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
@@ -16086,29 +16118,15 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="-43.18" y1="-30.48" x2="-43.18" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="T1" gate="G$1" pin="SW"/>
-<wire x1="-91.44" y1="-30.48" x2="-91.44" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="@1"/>
-<wire x1="-91.44" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-66.04" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-66.04" y="-33.02"/>
-<junction x="-55.88" y="-33.02"/>
-<pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="-55.88" y1="-38.1" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="-48.26" x2="-66.04" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="@2"/>
 <pinref part="T1" gate="G$1" pin="SENSE"/>
 <wire x1="-91.44" y1="-27.94" x2="-71.12" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-48.26" x2="-71.12" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-48.26" x2="-71.12" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="@2"/>
+<wire x1="-66.04" y1="-48.26" x2="-68.58" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="-68.58" y="-48.26"/>
 </segment>
 </net>
@@ -16409,6 +16427,20 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <wire x1="-152.4" y1="104.14" x2="-160.02" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-160.02" y1="104.14" x2="-160.02" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-160.02" y="101.6"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="SW"/>
+<wire x1="-91.44" y1="-30.48" x2="-91.44" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="@1"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-55.88" y="-33.02"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="-55.88" y1="-38.1" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-66.04" y="-33.02"/>
 </segment>
 </net>
 </nets>
