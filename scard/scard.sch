@@ -172,12 +172,6 @@
 <packages>
 <package name="LGA69">
 <description>&lt;p&gt;69 pin LGA package&lt;/p&gt;</description>
-<polygon width="0.01" layer="51">
-<vertex x="-5" y="-5"/>
-<vertex x="-5" y="5"/>
-<vertex x="5" y="5"/>
-<vertex x="5" y="-5"/>
-</polygon>
 <smd name="1" x="4.73" y="4" dx="0.7" dy="0.36" layer="1" rot="R180"/>
 <smd name="2" x="4.73" y="3.2" dx="0.7" dy="0.36" layer="1" rot="R180"/>
 <smd name="3" x="4.73" y="2.4" dx="0.7" dy="0.36" layer="1" rot="R180"/>
@@ -270,6 +264,12 @@
 <smd name="11" x="-0.98" y="2.05" dx="0.42" dy="0.889" layer="1" rot="R180"/>
 <smd name="12" x="-1.63" y="2.05" dx="0.42" dy="0.889" layer="1" rot="R180"/>
 <circle x="-1.65" y="-1.2" radius="0.064028125" width="0.127" layer="51"/>
+<wire x1="-2" y1="1.7" x2="-2.6" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.7" x2="-2.6" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.8" x2="-2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.8" x2="2.6" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.8" x2="2.6" y2="1.8" width="0.127" layer="21"/>
+<wire x1="2.6" y1="1.8" x2="2" y2="1.8" width="0.127" layer="21"/>
 </package>
 <package name="SRP7030">
 <smd name="P$1" x="-2.85" y="0" dx="2" dy="3.5" layer="1"/>
@@ -327,6 +327,7 @@
 <smd name="10" x="0.325" y="-1.7" dx="0.3" dy="0.6" layer="1"/>
 <smd name="11" x="-0.325" y="-1.7" dx="0.3" dy="0.6" layer="1"/>
 <smd name="12" x="-0.975" y="-1.7" dx="0.3" dy="0.6" layer="1"/>
+<text x="-1.27" y="-2.54" size="0.8128" layer="21" align="top-left">&gt;NAME</text>
 </package>
 <package name="R-PWQFN-N28">
 <smd name="29" x="0" y="0" dx="3.1" dy="2.1" layer="1"/>
@@ -15084,6 +15085,7 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
